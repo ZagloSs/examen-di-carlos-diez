@@ -1,6 +1,7 @@
 package com.example.carlosdiez;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +25,11 @@ public class Arranque extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getWindow().setNavigationBarColor(ContextCompat.getColor(Arranque.this, R.color.md_theme_light_secondaryContainer));
+        getWindow().setStatusBarColor(ContextCompat.getColor(Arranque.this, R.color.md_theme_light_primaryContainer));
+
+
+
         logo = findViewById(R.id.logo);
         txtLogo = findViewById(R.id.sharooktxt);
 
@@ -45,11 +51,13 @@ public class Arranque extends AppCompatActivity {
         Intent intent = new Intent(Arranque.this, Acceso.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
     }
 
     public void goToRegister(View view){
         Intent intent = new Intent(Arranque.this, Registro.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
     }
 }
