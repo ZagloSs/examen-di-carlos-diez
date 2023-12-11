@@ -18,6 +18,7 @@ public class Acceso extends AppCompatActivity {
     public void goToRegisterFromLog(View view){
         Intent intent = new Intent(Acceso.this, Registro.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
     public void ToastLog(View view){

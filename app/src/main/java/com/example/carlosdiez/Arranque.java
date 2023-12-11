@@ -44,10 +44,12 @@ public class Arranque extends AppCompatActivity {
     public void goToLog(View view){
         Intent intent = new Intent(Arranque.this, Acceso.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
     public void goToRegister(View view){
         Intent intent = new Intent(Arranque.this, Registro.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 }
