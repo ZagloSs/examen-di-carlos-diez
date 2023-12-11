@@ -66,10 +66,28 @@
         android:textColor="@color/md_theme_light_primary"
         android:textColorHint="@color/md_theme_light_primary"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="Confirm E-mail"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/md_theme_light_primary"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/md_theme_light_primary"
+        android:textColorHint="@color/md_theme_light_primary"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline5" />
 
     <EditText
